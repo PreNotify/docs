@@ -1,0 +1,52 @@
+---
+title: "What is PreNotify?"
+---
+
+## PreNotify
+
+PreNotify is an enterprise-ready resource expiration notification dashboard. It centralizes resources from cloud and security integrations (such as Microsoft Entra ID and Microsoft Intune), tracks expiration dates and contact methods, and helps you avoid missed renewals with a unified dashboard and optional SSO.
+
+## Key Features
+
+- **Resource expiration tracking**: View total resources, expiring soon (30 days), expired, and resources without contacts
+- **Unified dashboard**: Single view across integrations with filtering by integration type and resource type
+- **Cloud integrations**: Sync resources from Microsoft Entra ID and Microsoft Intune
+- **SSO (optional)**: Sign in with Microsoft Entra ID
+- **Background sync**: RQ workers for scheduled and on-demand sync tasks
+- **Enterprise-ready**: Built with Django, PostgreSQL, and Redis for scalable deployments
+
+## Integrate with your Tools
+
+- Microsoft Entra ID 
+  - Enterprise Applications
+  - App Registrations
+  - Directory Subscriptions
+- Microsoft Intune
+  - Apple VPP Token
+  - Apple MDM Push Certificate
+  - Apple Enrollment Program Token
+
+## Roadmap
+
+- Microsoft Intune
+  - Windows Enterprise Certificate
+  - Cloud PKI
+- SSL Certificates
+- Cloudflare
+  - Domain Renewal
+
+## Getting Help
+
+If you encounter issues not covered here:
+
+1. Check the [GitHub Issues](https://github.com/prenotify/prenotify/issues) for similar problems
+2. Review container logs: `sudo docker compose logs -f [service-name]`
+3. Create a new issue with:
+   - Description of the problem
+   - Steps to reproduce
+   - Relevant log output
+   - Your environment (Docker version, OS, etc.)
+
+##
+
+Please submit any issues into the issues section within this GitHub
