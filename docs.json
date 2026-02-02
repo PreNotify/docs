@@ -6,40 +6,49 @@
     "primary": "#0D9373"
   },
   "navigation": {
-    "groups": [
+    "tabs": [
       {
-        "group": "About",
-        "pages": [
-          "about/what-is-pre-notify"
-        ]
-      },
-      {
-        "group": "Manage PreNotify",
-        "pages": [
+        "tab": "Docs",
+        "groups": [
           {
-            "group": "Access Control",
+            "group": "About",
             "pages": [
-              "manage-pre-notify/access-control/create-user"
+              "about/what-is-pre-notify"
             ]
           },
           {
-            "group": "Integrations",
-            "icon": "plug",
+            "group": "Manage PreNotify",
             "pages": [
-              "manage-pre-notify/integrations/add-integration",
-              "manage-pre-notify/integrations/microsoft-entra-id",
-              "manage-pre-notify/integrations/microsoft-intune"
-            ]
-          },
-          {
-            "group": "Identity Providers",
-            "icon": "id-card",
-            "pages": [
-              "manage-pre-notify/identity-providers/add-identity-providers",
-              "manage-pre-notify/identity-providers/microsoft-entra-id"
+              {
+                "group": "Access Control",
+                "pages": [
+                  "manage-pre-notify/access-control/create-user"
+                ]
+              },
+              {
+                "group": "Integrations",
+                "icon": "plug",
+                "pages": [
+                  "manage-pre-notify/integrations/add-integration",
+                  "manage-pre-notify/integrations/microsoft-entra-id",
+                  "manage-pre-notify/integrations/microsoft-intune"
+                ]
+              },
+              {
+                "group": "Identity Providers",
+                "icon": "id-card",
+                "pages": [
+                  "manage-pre-notify/identity-providers/add-identity-providers",
+                  "manage-pre-notify/identity-providers/microsoft-entra-id"
+                ]
+              }
             ]
           }
         ]
+      },
+      {
+        "tab": "Github",
+        "href": "https://github.com/PreNotify/PreNotify"
       }
     ]
   }
