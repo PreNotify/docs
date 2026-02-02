@@ -6,40 +6,39 @@
     "primary": "#0D9373"
   },
   "navigation": {
-    "anchors": [
+    "groups": [
       {
-        "anchor": "About",
+        "group": "About",
         "pages": [
-          "about/what-is-pre-notify",
+          "about/what-is-pre-notify"
+        ]
+      },
+      {
+        "group": "Manage PreNotify",
+        "pages": [
           {
-            "group": "Manage PreNotify",
+            "group": "Access Control",
             "pages": [
-              {
-                "group": "Access Control",
-                "pages": [
-                  "manage-pre-notify/access-control/create-user"
-                ]
-              },
-              {
-                "group": "Integrations",
-                "icon": "plug",
-                "pages": [
-                  "manage-pre-notify/integrations/add-integration",
-                  "manage-pre-notify/integrations/microsoft-entra-id",
-                  "manage-pre-notify/integrations/microsoft-intune"
-                ]
-              },
-              {
-                "group": "Identity Providers",
-                "icon": "id-card",
-                "pages": [
-                  "manage-pre-notify/identity-providers/add-identity-providers",
-                  "manage-pre-notify/identity-providers/microsoft-entra-id"
-                ]
-              }
+              "manage-pre-notify/access-control/create-user"
             ]
           },
-          "quick-install-guide"
+          {
+            "group": "Integrations",
+            "icon": "plug",
+            "pages": [
+              "manage-pre-notify/integrations/add-integration",
+              "manage-pre-notify/integrations/microsoft-entra-id",
+              "manage-pre-notify/integrations/microsoft-intune"
+            ]
+          },
+          {
+            "group": "Identity Providers",
+            "icon": "id-card",
+            "pages": [
+              "manage-pre-notify/identity-providers/add-identity-providers",
+              "manage-pre-notify/identity-providers/microsoft-entra-id"
+            ]
+          }
         ]
       }
     ]
