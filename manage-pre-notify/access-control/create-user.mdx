@@ -1,4 +1,19 @@
 ---
-title: 'Create User'
+title: "Create User"
+description: "Add internal or external users to your organization"
 ---
 
+Users can be added to PreNotify. When a user is added to PreNotify, they can be either an internal user or an external user. There is a default administrative user object created in the first startup setup instructions through the management command.
+
+When removing a user from PreNotify, their account will be completely deleted, including all records referencing the user, such as logs. To retain user referenced records, we recommend suspending a user account, then visit the server admin panel to strip the user object permissions or push logs to a third party SIEM.
+
+## Internal Users
+
+An internal user is an identity managed by PreNotify only. When adding the user, you will be required to provide their email, then set their password, first name, last name, and permissions.
+
+## External Users
+
+An external user is an identity managed by an external identity provider. When creating an external user, you will need have an external identity provider setup.\
+[Check out the documentation on adding an IDP.](/manage-pre-notify/identity-providers/add-identity-providers)
+
+An identity provider may have auto‑provisioning enabled. **Currently,** **new users who log in with the IDP are still required to be created manually.**
